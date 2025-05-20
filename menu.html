@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - La Cucina Italiana</title>
+    <meta name="description" content="Explore our menu of authentic Italian dishes, from handmade pasta to wood-fired pizzas.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>La Cucina Italiana</h1>
+            <p>Authentic Italian Cuisine</p>
+        </div>
+        <nav id="main-nav">
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <p>Traditional Italian cuisine prepared with love</p>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <div class="container">
+                <div class="menu-tabs">
+                    <button class="menu-tab active" data-category="antipasti">Antipasti</button>
+                    <button class="menu-tab" data-category="pasta">Pasta</button>
+                    <button class="menu-tab" data-category="pizza">Pizza</button>
+                    <button class="menu-tab" data-category="secondi">Secondi</button>
+                    <button class="menu-tab" data-category="dolci">Dolci</button>
+                </div>
+
+                <div class="menu-items" id="antipasti">
+                    <h3 class="menu-category">Antipasti</h3>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Bruschetta al Pomodoro</h4>
+                            <p>Toasted bread topped with fresh tomatoes, garlic, basil, and extra virgin olive oil</p>
+                        </div>
+                        <div class="menu-item-price">€8</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Caprese</h4>
+                            <p>Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze</p>
+                        </div>
+                        <div class="menu-item-price">€10</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Antipasto Misto</h4>
+                            <p>Selection of Italian cured meats, cheeses, olives, and marinated vegetables</p>
+                        </div>
+                        <div class="menu-item-price">€15</div>
+                    </div>
+                </div>
+
+                <div class="menu-items hidden" id="pasta">
+                    <h3 class="menu-category">Pasta</h3>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Spaghetti alla Carbonara</h4>
+                            <p>Spaghetti with pancetta, eggs, Pecorino Romano, and black pepper</p>
+                        </div>
+                        <div class="menu-item-price">€14</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Tagliatelle al Ragù</h4>
+                            <p>Homemade tagliatelle with traditional Bolognese sauce</p>
+                        </div>
+                        <div class="menu-item-price">€16</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Risotto ai Funghi Porcini</h4>
+                            <p>Creamy risotto with porcini mushrooms and Parmigiano-Reggiano</p>
+                        </div>
+                        <div class="menu-item-price">€18</div>
+                    </div>
+                </div>
+
+                <div class="menu-items hidden" id="pizza">
+                    <h3 class="menu-category">Pizza</h3>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Margherita</h4>
+                            <p>Tomato sauce, mozzarella, fresh basil, and extra virgin olive oil</p>
+                        </div>
+                        <div class="menu-item-price">€12</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Quattro Formaggi</h4>
+                            <p>Mozzarella, gorgonzola, fontina, and Parmigiano-Reggiano</p>
+                        </div>
+                        <div class="menu-item-price">€14</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Diavola</h4>
+                            <p>Tomato sauce, mozzarella, spicy salami, and chili flakes</p>
+                        </div>
+                        <div class="menu-item-price">€15</div>
+                    </div>
+                </div>
+
+                <div class="menu-items hidden" id="secondi">
+                    <h3 class="menu-category">Secondi</h3>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Ossobuco alla Milanese</h4>
+                            <p>Braised veal shanks with gremolata, served with saffron risotto</p>
+                        </div>
+                        <div class="menu-item-price">€24</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Saltimbocca alla Romana</h4>
+                            <p>Veal cutlets with prosciutto and sage, sautéed in white wine</p>
+                        </div>
+                        <div class="menu-item-price">€22</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Branzino al Forno</h4>
+                            <p>Whole baked sea bass with herbs, lemon, and olive oil</p>
+                        </div>
+                        <div class="menu-item-price">€26</div>
+                    </div>
+                </div>
+
+                <div class="menu-items hidden" id="dolci">
+                    <h3 class="menu-category">Dolci</h3>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Tiramisu</h4>
+                            <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream</p>
+                        </div>
+                        <div class="menu-item-price">€8</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Panna Cotta</h4>
+                            <p>Vanilla-infused cream pudding with berry coulis</p>
+                        </div>
+                        <div class="menu-item-price">€7</div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Cannoli Siciliani</h4>
+                            <p>Crispy pastry tubes filled with sweet ricotta and chocolate chips</p>
+                        </div>
+                        <div class="menu-item-price">€9</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>La Cucina Italiana</h3>
+                    <p>123 Italian Street<br>Food City, FC 12345</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@lacucinaitaliana.com</p>
+                </div>
+                <div class="footer-hours">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 11am - 10pm</p>
+                    <p>Friday - Saturday: 11am - 11pm</p>
+                    <p>Sunday: 12pm - 9pm</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Cucina Italiana. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

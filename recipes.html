@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes - La Cucina Italiana</title>
+    <meta name="description" content="Learn how to prepare authentic Italian recipes from our master chefs.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>La Cucina Italiana</h1>
+            <p>Authentic Italian Cuisine</p>
+        </div>
+        <nav id="main-nav">
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="recipes.html" class="active">Recipes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Italian Recipes</h2>
+                <p>Bring the taste of Italy to your home</p>
+            </div>
+        </section>
+
+        <section class="recipes-section">
+            <div class="container">
+                <div class="recipe-cards">
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1560434019-4558f9a9e2a1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Spaghetti Carbonara">
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Spaghetti Carbonara</h3>
+                            <p class="recipe-meta">Preparation: 10 min | Cooking: 15 min | Difficulty: Medium</p>
+                            <p class="recipe-description">A classic Roman pasta dish with eggs, cheese, pancetta, and black pepper.</p>
+                            <button class="btn recipe-btn" data-recipe="carbonara">View Recipe</button>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://images.unsplash.com/photo-1649688423692-308d2fc1027d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pizza Margherita">
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Pizza Margherita</h3>
+                            <p class="recipe-meta">Preparation: 2 hours | Cooking: 10 min | Difficulty: Medium</p>
+                            <p class="recipe-description">The quintessential Neapolitan pizza with tomatoes, mozzarella, and basil.</p>
+                            <button class="btn recipe-btn" data-recipe="pizza">View Recipe</button>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1695028377519-70fb0c385db2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tiramisu">
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Tiramisu</h3>
+                            <p class="recipe-meta">Preparation: 30 min | Chilling: 4 hours | Difficulty: Easy</p>
+                            <p class="recipe-description">A beloved Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                            <button class="btn recipe-btn" data-recipe="tiramisu">View Recipe</button>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1695240028448-9a8bf3e164f5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Risotto ai Funghi">
+                        </div>
+                        <div class="recipe-content">
+                            <h3>Risotto ai Funghi</h3>
+                            <p class="recipe-meta">Preparation: 10 min | Cooking: 25 min | Difficulty: Medium</p>
+                            <p class="recipe-description">Creamy Arborio rice cooked with mushrooms, wine, and Parmigiano-Reggiano.</p>
+                            <button class="btn recipe-btn" data-recipe="risotto">View Recipe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="recipe-modal" id="recipe-modal">
+            <div class="recipe-modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="recipe-modal-header">
+                    <h3 id="recipe-title">Recipe Title</h3>
+                    <p id="recipe-description">Recipe description</p>
+                </div>
+                <div class="recipe-modal-body">
+                    <div class="recipe-ingredients">
+                        <h4>Ingredients</h4>
+                        <ul id="ingredients-list"></ul>
+                    </div>
+                    <div class="recipe-instructions">
+                        <h4>Instructions</h4>
+                        <ol id="instructions-list"></ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>La Cucina Italiana</h3>
+                    <p>123 Italian Street<br>Food City, FC 12345</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@lacucinaitaliana.com</p>
+                </div>
+                <div class="footer-hours">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 11am - 10pm</p>
+                    <p>Friday - Saturday: 11am - 11pm</p>
+                    <p>Sunday: 12pm - 9pm</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Cucina Italiana. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/recipes.js"></script>
+</body>
+</html>

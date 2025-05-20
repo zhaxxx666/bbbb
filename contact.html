@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - La Cucina Italiana</title>
+    <meta name="description" content="Contact La Cucina Italiana to make a reservation or inquire about our services.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>La Cucina Italiana</h1>
+            <p>Authentic Italian Cuisine</p>
+        </div>
+        <nav id="main-nav">
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Our Information</h3>
+                        
+                        <div class="info-item">
+                            <h4>Address</h4>
+                            <p>123 Italian Street</p>
+                            <p>Food City, FC 12345</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <h4>Hours</h4>
+                            <p>Monday - Thursday: 11am - 10pm</p>
+                            <p>Friday - Saturday: 11am - 11pm</p>
+                            <p>Sunday: 12pm - 9pm</p>
+                        </div>
+                        
+                        <div class="info-item">
+                            <h4>Contact</h4>
+                            <p>Phone: (123) 456-7890</p>
+                            <p>Email: info@lacucinaitaliana.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <h3>Make a Reservation</h3>
+                        
+                        <form id="reservation-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="guests">Number of Guests</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="1">1 person</option>
+                                    <option value="2">2 people</option>
+                                    <option value="3">3 people</option>
+                                    <option value="4">4 people</option>
+                                    <option value="5">5 people</option>
+                                    <option value="6">6 people</option>
+                                    <option value="7">7 people</option>
+                                    <option value="8">8 people</option>
+                                    <option value="9+">9+ people</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Special Requests</label>
+                                <textarea id="message" name="message" rows="4"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn">Submit Reservation</button>
+                            </div>
+                        </form>
+                        
+                        <div id="form-success" class="form-message success hidden">
+                            Thank you! Your reservation has been submitted. We will contact you shortly to confirm.
+                        </div>
+                        
+                        <div id="form-error" class="form-message error hidden">
+                            Please fill out all required fields.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h3>Find Us</h3>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <p>Interactive map would be displayed here in a production environment.</p>
+                        <p>La Cucina Italiana - 123 Italian Street, Food City, FC 12345</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>La Cucina Italiana</h3>
+                    <p>123 Italian Street<br>Food City, FC 12345</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Email: info@lacucinaitaliana.com</p>
+                </div>
+                <div class="footer-hours">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 11am - 10pm</p>
+                    <p>Friday - Saturday: 11am - 11pm</p>
+                    <p>Sunday: 12pm - 9pm</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Cucina Italiana. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
